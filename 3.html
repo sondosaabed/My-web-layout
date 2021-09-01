@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style2.css">
+		<title> My website</title>
+	</head>
+	<body>
+		<div class="header">
+			<h1> My website </h1>
+			<p> This website to practice html and css</p>	
+		</div>
+
+		<div class="nav">
+			<a href="#"> Link1</a>
+			<a href="#"> Link2</a>
+			<a href="#"> Link3</a>
+		</div>
+
+		<div class="row">
+			<div class="leftcolmn">
+				<div class="card">
+					<div class="tooltip">
+					<h2>About this website</h2>
+						<span class="tooltiptext"> about this web</span>
+					</div>
+					<p> This paragraph is about this website</p>
+					<div class="imgbox"  id="img">Image</div>
+					<div class="modal" id="box" >
+						<div class="modal-content" id="content1"></div>
+					</div>
+					<p> Text</p>
+					<p> Pollution is the burning problem of today. But not much attention is paid to noise pollution. The noise from vehicles, machines and loud</p>
+				</div>
+				<div class="card">
+					<h2> How we work</h2>
+					<p> This is a paragraph about how we work</p>
+					<div class="imgbox">Image</div>
+					<p> speakers is deafening. People have to speak loudly to be heard. All this causes tension and lot of diseases. Government should take steps to control noise pollution.</p>
+				</div>
+			</div>
+
+			<div class="rightcolmn">
+				<div class="card">
+					<h2> About the author</h2>
+					<div class="imgbox"> Image</div>
+					<p> This is a paragraph about the author of this text</p>
+				</div>
+				<div class="card">
+					<h2> Most asked </h2>
+					<div class="imgbox">question1</div>
+				</div>
+				<div class="card">
+					<h3> Follow us</h3>
+					<p> For more</p>
+					<button> Click </button>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<h2> Footer </h2>
+		</div>
+		
+		<script>
+			var modal= document.getElementById("box");
+			var img= document.getElementById('img');
+			var content= document.getElementById("content1");
+			
+			img.onclick= function(){
+				modal.style.display="block";  
+				content.class=img.class; 
+			}
+		</script>
+	</body>
+</html>
